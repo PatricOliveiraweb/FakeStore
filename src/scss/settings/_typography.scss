@@ -1,0 +1,32 @@
+@mixin title {
+  font-size: 3.3rem;
+  line-height: 4rem;
+  font-family: "Great Vibes", cursive;
+}
+
+@mixin subTitle {
+  font-size: 2.6rem;
+  line-height: 3rem;
+  font-family: "Great Vibes", cursive;
+}
+@mixin subTitle-2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: "Aref Ruqaa Ink", serif;
+}
+
+@mixin text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Aref Ruqaa Ink", serif;
+}
+
+//margins:
+/* 
+10px = 0.62rem
+20px = 1.25rem
+30px = 1.87rem
+60px = 3.75rem
+120px = 7.5rem
+
+*/

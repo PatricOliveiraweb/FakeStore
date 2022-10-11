@@ -1,0 +1,60 @@
+@import "../scss/settings.scss";
+.product {
+  nav {
+    display: flex;
+    padding: 20px 0;
+    p,
+    a {
+      @include text;
+    }
+    a {
+      color: $color-primary;
+      font-weight: 600;
+      margin-left: 10px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 100px;
+    padding: 100px;
+    align-items: flex-start;
+    figure {
+      height: 300px;
+      text-align: center;
+      img {
+        max-height: 100%;
+      }
+    }
+    figcaption {
+      h2 {
+        @include subTitle-2;
+      }
+      p {
+        @include text;
+        margin: 10px 0;
+      }
+      h3 {
+        @include subTitle-2;
+        color: $color-primary;
+      }
+      .btnAdd {
+        display: inline-block;
+        background: $color-primary;
+        padding: 15px;
+        color: $color-white;
+        cursor: pointer;
+        border: 2px solid $color-primary;
+        margin-top: 10px;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          color: $color-primary;
+          background: $color-white;
+        }
+      }
+    }
+  }
+}

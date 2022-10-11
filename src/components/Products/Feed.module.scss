@@ -1,0 +1,16 @@
+@import "../../scss/settings.scss";
+
+.feed {
+  margin: 120px 0 0;
+  h2 {
+    @include subTitle;
+    text-align: center;
+    color: $color-secondary;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 60px 0;
+  }
+}

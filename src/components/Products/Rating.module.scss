@@ -1,0 +1,19 @@
+@import "../../scss/settings.scss";
+
+.rating {
+  ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-top: 10px;
+    li {
+      svg {
+        width: 20px;
+        fill: $color-secondary;
+      }
+      &:last-child {
+        margin-left: 10px;
+      }
+    }
+  }
+}

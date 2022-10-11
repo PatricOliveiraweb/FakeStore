@@ -1,0 +1,25 @@
+@import "../../scss/settings.scss";
+
+.Button {
+  display: inline-block;
+  background: $color-primary;
+  color: $color-white;
+  padding: 7px 15px;
+  border: 2px solid $color-primary;
+  @include text;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background: $color-white;
+    color: $color-primary;
+  }
+  &:global(.secondary) {
+    background: $color-white;
+    color: $color-primary;
+    border: 2px solid $color-white;
+    &:hover {
+      background: $color-secondary;
+      color: $color-white;
+    }
+  }
+}

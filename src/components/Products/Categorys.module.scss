@@ -1,0 +1,37 @@
+@import "../../scss/settings.scss";
+
+.category {
+  margin: 30px auto 0;
+  h2 {
+    @include subTitle;
+    color: $color-secondary;
+    text-align: center;
+  }
+  nav {
+    margin-top: 15px;
+    margin-left: 50px;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        margin-right: 15px;
+        &:last-child {
+          margin: 0;
+        }
+        a {
+          background: $color-primary;
+          color: $color-white;
+          padding: 20px 40px;
+          display: block;
+          border: 1px solid $color-primary;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            background: $color-white;
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}

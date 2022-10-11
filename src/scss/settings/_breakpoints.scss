@@ -1,0 +1,11 @@
+$breakpoints: (
+  "iphone5": 374px,
+  "phone": 520px,
+  "small": 768px,
+  "tablet": 1024px,
+  "vga": 1280px,
+  "medium": 1366px,
+  "large": 1440px,
+  "extralarge": 1600px,
+) !default;
+@import "../node_modules/include-media/dist/_include-media.scss";
